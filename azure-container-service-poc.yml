@@ -1,7 +1,7 @@
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  name: azure-container-service-poc-v1
+  name: azure-container-service-poc-v2
 spec:
   replicas: 1
   strategy:
@@ -12,11 +12,11 @@ spec:
   template:
     metadata:
       labels:
-        app: azure-container-service-poc-v1
+        app: azure-container-service-poc-v2
     spec:
       containers:
       - name: azurecontainerservicepoc
-        image: acraramsam.azurecr.io/azurecontainerservicepoc:v1
+        image: acraramsam.azurecr.io/azurecontainerservicepoc:v2
         ports:
         - containerPort: 80
         args: ["-it"]
@@ -27,15 +27,15 @@ spec:
             cpu: 500m
         env:
         - name: dev
-          value: "azure-container-service-poc-v1"
+          value: "azure-container-service-poc-v2"
 ---
-apiVersion: v1
+apiVersion: v2
 kind: Service
 metadata:
-  name: azure-container-service-poc-v1
+  name: azure-container-service-poc-v2
 spec:
   type: LoadBalancer
   ports:
   - port: 80
   selector:
-    app: azure-container-service-poc-v1
+    app: azure-container-service-poc-v2
