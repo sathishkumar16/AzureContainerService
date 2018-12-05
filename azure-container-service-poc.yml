@@ -15,8 +15,8 @@ spec:
         app: azure-container-service-poc-v2
     spec:
       containers:
-      - name: azurecontainerservicepoc
-        image: acraramsam.azurecr.io/azurecontainerservicepoc:v2
+      - name: azurecontainerservice
+        image: acraramsam.azurecr.io/azurecontainerservice:v2
         ports:
         - containerPort: 80
         args: ["-it"]
