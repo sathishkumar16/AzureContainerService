@@ -1,0 +1,3 @@
+C:\Users\HTECH\source\repos\AzureContainerServicePoc\AzureContainerServicePoc\obj\Debug\netcoreapp2.1\AzureContainerServicePoc.csproj.CoreCompileInputs.cache
+C:\Users\HTECH\source\repos\AzureContainerServicePoc\AzureContainerServicePoc\obj\Debug\netcoreapp2.1\AzureContainerServicePoc.AssemblyInfoInputs.cache
+C:\Users\HTECH\source\repos\AzureContainerServicePoc\AzureContainerServicePoc\obj\Debug\netcoreapp2.1\AzureContainerServicePoc.AssemblyInfo.cs
